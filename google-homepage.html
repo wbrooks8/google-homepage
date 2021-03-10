@@ -111,34 +111,42 @@ a {
 }
 
 #search-icon {
-    position: relative;
-    left: 540px;
-    top: 140px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
     width: 22px;
 }
 
 #voice{
-    position: relative;
+    position: absolute;
     width: 23px;
-    top: 114px;
-    left: 1078px;
+    top: 10px;
+    right: 10px;
+}
+
+.buttons {
+    position: relative;
+    margin: auto;
+    top: 22vh;
 }
 
 #search-button, #lucky {
-    position: relative;
-    left: 670px;
-    top: 150px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-width: 0px;
-    border-radius: 5px;
+    position: absolute;
+    left: 40vw;
     color: rgb(105, 105, 105);
+    height: 35px;
+    width: 160px;
+    border-radius: 5px;
+    border: none
 }
 
 #lucky {
-    left: 680px;
+    position: absolute;
+    left: 50vw;
+}
+
+#search-button:hover, #lucky:hover {
+    box-shadow: 0px 0px 3px 0px rgba(77, 76, 76, 0.4);
 }
 
 footer {
@@ -212,15 +220,10 @@ footer {
     <div id="searchbar"> 
         <a href=""></a>
         <input id="search" type="text">
-    </div>
-    <div>
         <a href=""><img id="search-icon" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png"></a>
-
-    </div>
-    <div>
         <a href=""> <img id="voice" src="https://web.archive.org/web/20191130234609im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"></a>
     </div>
-    <div>
+    <div class="buttons">
         <button id="search-button" type="">Google Search</button>
         <button id="lucky" type="">I'm Feeling Lucky</button>
     </div>
